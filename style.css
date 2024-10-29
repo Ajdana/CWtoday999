@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 800px;
+    height: 600px;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+.main {
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.bottompart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.first {
+    background-color: #2bb3b1;
+    color: white;
+    border-bottom-left-radius: 10px;
+}
+
+.second {
+    background-color: #4abebd;
+    color: white;
+    border-bottom-right-radius: 10px;
+}
+
+.second p {
+    padding-right: 50px;
+}
+
+.first h2, span {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.first button {
+
+}
+.info {
+    padding-left: 50px;
+}
+.second h2 {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.btn {
+    margin-left: 50px;
+}
+
+button {
+    background-color: #bfdf32;
+    border: none;
+    color: white;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 450) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 200px;
+        height: 1000px;
+    }
+}
